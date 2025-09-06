@@ -1,0 +1,48 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+ul, ol{
+  list-style: none;
+  padding-left: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl
+):where([class]) {
+  margin-block: 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
